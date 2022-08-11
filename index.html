@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>To do App - OOP</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="add-container">
+        <h2>Adicione suas tarefas:</h2>
+        <form action="">
+          <input
+            type="text"
+            name="task"
+            id="task"
+            placeholder="O que você tem para fazer?"
+          />
+          <button type="submit" id="add"><i class="fa fa-plus"></i></button>
+        </form>
+      </div>
+      <div id="task-container">
+        <h2>Veja suas Tarefas:</h2>
+        <!-- TEMPLATE -->
+        <div class="task hide">
+          <i class="fa fa-check"></i>
+          <span class="task-title">Título da tarefa</span>
+          <i class="fa fa-trash"></i>
+        </div>
+        <!-- FIM TEMPLATE -->
+        <p id="empty-tasks">Não há tarefas cadastradas.</p>
+      </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
